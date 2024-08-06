@@ -1,0 +1,14 @@
+#titulo{
+    text-align: center;
+    color: hotpink;
+}
+
+.rodape{
+    text-align: center;
+    color:rgb(20, 20, 163);
+    border: 1px solid;
+}
+
+.entradas-usuarios{
+    border: 1px solid;
+}
