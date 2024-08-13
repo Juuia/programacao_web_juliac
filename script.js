@@ -20,9 +20,20 @@ function validaCPF(cpf) {
         cpf = cpf.trim();
 
         if(/[a-zA-Z]/.test(cpf)){
-            console.log("Contém letras");
+            console.log("Não pode conter letras");
             return false
         }
+
+        //verificar se é composto SOMENTE de números, "." ou "-"
+        if(!/^[\d.-]+$/.test(cpf)) {
+            alert("CPF só pode conter números, '.' ou '-'");
+            return false;
+        }
+        //    console.log("O CPF só tem números ou pontos ou hífen");
+        //}
+        //else {
+        //    console.log("Tem caracter inválido!")
+        //}
 
     return true;
 }
