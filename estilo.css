@@ -10,7 +10,8 @@
 
 input {
     display: block;
-    margin: 1px;
+    margin: 0 auto 3px;
+
 }
 
 body {
@@ -28,6 +29,8 @@ body {
     transform: translate(-50%, -50%);
     padding: 5px;
     background-color: black;
+    text-align: center;
+    padding-top: 10px;
 }
 
 .rodape {
@@ -38,7 +41,7 @@ body {
     text-align: center;
     padding-top: 5px;
     padding-bottom: 5px;
-    color: white;
-    background-color: darkcyan;
+    color: hotpink;
+    background-color: black;
 
 }
