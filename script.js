@@ -35,5 +35,10 @@ function validaCPF(cpf) {
         //    console.log("Tem caracter inválido!")
         //}
 
+        //Continuar a validação
+        //Formatos CPFs válidos:
+        //123.456.789-10
+        //12345678910
+
     return true;
 }
