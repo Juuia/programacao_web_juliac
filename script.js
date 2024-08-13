@@ -29,6 +29,13 @@ function validaCPF(cpf) {
             alert("CPF só pode conter números, '.' ou '-'");
             return false;
         }
+
+        if(cpf.length != 11 && cpf.length != 14) {
+            alert("Formato inválido");
+            return false;
+        }
+
+
         //    console.log("O CPF só tem números ou pontos ou hífen");
         //}
         //else {
