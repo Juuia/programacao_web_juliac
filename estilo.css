@@ -1,14 +1,44 @@
+* {
+    margin: 0px;
+}
+
 #titulo{
     text-align: center;
     color: hotpink;
+    background-color: black;
 }
 
-.rodape{
+input {
+    display: block;
+    margin: 1px;
+}
+
+body {
+    background-image: url('images/foto\ site.jpg');
+}
+
+.entradas-usuarios {
+    border: 1px solid;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+    background-color: black;
+}
+
+.rodape {
+    border: 1px solid;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
     text-align: center;
-    color:rgb(20, 20, 163);
-    border: 1px solid;
-}
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    background-color: darkcyan;
 
-.entradas-usuarios{
-    border: 1px solid;
 }
