@@ -17,6 +17,12 @@ function validaCPF(cpf) {
         return false;
     }
 
+        cpf = cpf.trim();
+
+        if(/[a-zA-Z]/.test(cpf)){
+            console.log("Contém letras");
+            return false
+        }
 
     return true;
 }
