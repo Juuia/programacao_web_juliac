@@ -47,5 +47,33 @@ function validaCPF(cpf) {
         //123.456.789-10
         //12345678910
 
-    return true;
-}
+        // Iterar 9 primeiros digitos, respeitando a seguinte regra:
+        let soma = 0;
+
+        for(let i = 1; i <=9; i++) {
+            //console.log(cpf.charAt(i-1));
+            soma = soma + (cpf.charAt(i-1) * (10 - (i-1)));
+        }
+        console.log(soma);
+        let resto = soma % 11;        // Recuperar o RESTO da divisão por 11
+
+        if(resto < 2) {
+            if(cpf.charAt(9) != 0) {
+                alert("CPF inválido!");
+                return false;
+            }
+           // return true;
+        }
+            // verificar se o primeiro digito verificador
+            // (10º digito do cpf) é zero
+            // 10º digito do cpf é recuperado com cpf.charAt(9)
+
+        let digitoVerificador1 = 11 - resto;
+
+        if (digitoVerificador1 != cpf.charAt(9)) {
+            alert("CPF inválido");
+            return false;
+        }
+        return true;
+    }
+     
